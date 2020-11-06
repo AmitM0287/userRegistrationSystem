@@ -1,10 +1,21 @@
 #!/bin/bash
 
-read -p "Enter the name:" name
+echo
+read -p "Enter First name:" fname
 
-if [[ "$name" =~ ^[A-Z]{1}[a-z]{2,}$ ]]
+if [[ "$fname" =~ ^[A-Z]{1}[a-z]{2,}$ ]]
 then
-    echo "It's a Valid Name"
+    echo "It's a Valid First Name"
 else
-    echo "It's a Invalid Name"
+    echo "It's a Invalid First Name"
+fi
+
+echo
+read -p "Enter Last name:" lname
+
+if [[ "$lname" =~ ^[A-Z]{1}[a-z]{2,}$ ]]
+then
+    echo "It's a Valid Last Name"
+else
+    echo "It's a Invalid Last Name"
 fi
