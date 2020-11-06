@@ -32,3 +32,12 @@ else
     echo "Email address $email is invalid."
 fi
 
+#Validation of Mobile Number
+echo
+read -p "Enter a mobile number : " moNo
+if [[ "$moNo" =~ ^[0-9]{2}[" "][0-9]{10}$ ]]
+then
+    echo "Email address $moNo is valid."
+else
+    echo "Email address $moNo is invalid."
+fi
